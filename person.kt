@@ -14,7 +14,9 @@ fun main(args: Array<String>) {
     val persons = listOf(Person("Mike"), Person("Paul"))
     val ints = listOf(1, 2, 3, 4, 5, 6, 7)
     val listLength = ints.length()
+    val listProduct = ints.product()
     show(persons)
     println(listLength)
+    println(listProduct)
 }
 
