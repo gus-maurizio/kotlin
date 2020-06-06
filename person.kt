@@ -8,7 +8,12 @@ fun show(persons: List<Person>) {
 }
 
 fun <T> List<T>.length() = this.size
-fun List<Int>.product(): Int = this.fold(1) { a, b -> a * b }
+
+fun List<Int>.product(): Int = this.fold(1) 
+{ 
+  a: Int, b: Int -> 
+    a * b 
+}
 
 fun main(args: Array<String>) {
     val persons = listOf(Person("Mike"), Person("Paul"))
